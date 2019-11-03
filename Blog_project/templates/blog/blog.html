@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<html>
+<body>
+<form action="/saveblog/" method="post">
+    {% csrf_token %}
+<table align="center" border="0" bgcolor="#9acd32">
+    <tr>
+        <td>
+                    <h1>Upload Blogs</h1>
+
+            <input type="number" placeholder="bookno" name="b1"><br><br>
+            <input type="text" placeholder="bookname" name="b2"><br><br>
+            <input type="text" placeholder="Author name" name="b3"><br><br>
+
+            <input type="file" placeholder="upload books" name="b4"><br><br>
+            <input type="number" placeholder="price" name="b5"><br><br>
+            <input type="date" placeholder="date" name="b6"><br><br>
+
+
+
+            <button type="submit">save</button>
+
+        </td>
+    </tr>
+
+</table>
+    </form>
+</body>
+</html>
