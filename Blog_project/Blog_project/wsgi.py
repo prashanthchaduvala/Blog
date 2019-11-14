@@ -8,8 +8,12 @@ https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/
 """
 
 import os
+import sys
+path = 'Users\Prashanth\Documents\GitHub\Blog\Blog_project'
+if path not in sys.path:
+  sys.path.insert(0,path)
 
-sys.path.append('Users\Prashanth\Documents\GitHub\Blog\Blog_project')
+#sys.path.append('Users\Prashanth\Documents\GitHub\Blog\Blog_project')
 
 from django.core.wsgi import get_wsgi_application
 
