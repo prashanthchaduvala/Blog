@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/
 import os
 import sys
 
-path = 'home/djangoactv/Blog/ActiveCityAdministrations'
+path = 'home/djangoactv/Blog/Blog_project'
 if path not in sys.path:
   sys.path.insert(0,path)
 
